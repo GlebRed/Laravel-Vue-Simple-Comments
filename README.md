@@ -1,10 +1,10 @@
 # Simple comments plugin for Laravel Inertia Vue stack
 
-### Preview
-![preview](https://github.com/GlebRed/Laravel-Vue-Simple-Comments/raw/master/preview.gif)
-
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/glebred/laravel-vue-simple-comments.svg?style=flat-square)](https://packagist.org/packages/glebred/laravel-vue-simple-comments)
 [![Total Downloads](https://img.shields.io/packagist/dt/glebred/laravel-vue-simple-comments.svg?style=flat-square)](https://packagist.org/packages/glebred/laravel-vue-simple-comments)
+
+### Preview
+![preview](https://github.com/GlebRed/Laravel-Vue-Simple-Comments/raw/master/preview.gif)
 
 This package allows you to add comments to your Laravel Inertia Vue stack application. The comment form is implemented using TS and Daisy UI which is a kit of UI components for Tailwind CSS. I made it because I needed a simple comment form for my project. I hope it will be useful for you too. 
 
