@@ -80,14 +80,10 @@ class CommentsController extends LaravelVueSimpleComments
             'user_id' => $request->user()->id,
             'body' => $validated['body'],
         ]);
-
-
         return back()->with('flash', [
             'message' => 'Comment added successfully!',
         ]);
-
     }
-
 
     public function destroy(Comment $comment)
     {
@@ -113,12 +109,14 @@ Route::delete('/comments/{comment}', [MyCommentsController::class, 'destroy']);
 ?>
 ```
 
-To show a list of comments, don't forget to add a relationship to your content model:
+Don't forget to use this trait in your model:
 
 ```php
-public function comments()
+use GlebRed\LaravelVueSimpleComments\Traits\HasComments;
+
+class News extends Model
 {
-    return $this->morphMany(Comment::class, 'commentable');
+    use HasComments;
 }
 ```
 And then add comments to your content resource, for example:

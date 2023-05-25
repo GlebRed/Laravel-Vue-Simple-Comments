@@ -39,6 +39,10 @@ class LaravelVueSimpleCommentsServiceProvider extends ServiceProvider
                 __DIR__.'/Requests/CommentRequest.php' => app_path('Http/Requests/CommentRequest.php'),
             ], 'laravel-vue-simple-comments');
 
+            // Publishing the traits.
+            $this->publishes([
+                __DIR__.'/Traits/HasComments.php' => app_path('Models/Traits/HasComments.php'),
+            ], 'laravel-vue-simple-comments');
 
             // Publishing the resources.
             $this->publishes([

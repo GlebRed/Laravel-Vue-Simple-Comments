@@ -10,7 +10,12 @@ export default {
     '^.+\\.ts$': 'ts-jest',
   },
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1',
+    "axios": "axios/dist/node/axios.cjs"
   },
   moduleFileExtensions: ['vue', 'js', 'json', 'jsx', 'ts', 'tsx', 'node'],
+  testEnvironment: 'jest-environment-jsdom',
+  testEnvironmentOptions: {
+    "resources": "usable",
+    "url": "http://localhost"
+  },
 };
