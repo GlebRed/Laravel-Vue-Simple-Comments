@@ -1,0 +1,7 @@
+node_modules
+build
+.idea
+composer.lock
+vendor
+coverage
+.phpunit.result.cache
