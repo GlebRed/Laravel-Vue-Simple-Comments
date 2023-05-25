@@ -40,21 +40,22 @@ This will create a
 `resources/js/vendor/laravel-vue-simple-comments/Comments.vue`
 - Also a migration
 `database/migrations/create_comments_table.php`
-- A model
+- Model
 `app/Models/Comment.php`
-- A request
+- Request
 `app/Http/Requests/CommentRequest.php`
-- A resource
+- Resource
 `app/Http/Resources/CommentResource.php`
 
 Call the comments section in your Vue component:
+
 Import the component
 `import CommentForm from "@/vendor/laravel-vue-simple-comments/Comments.vue";`
 and use it in your template, for example:
 ```vue
 <CommentForm :commentable="answer" :commentable_type="'answers'"></CommentForm>
 ```
-Where `commentable` is the model you want to comment on, and `commentable_type` is the model name.
+Where `commentable` is the object you want to comment on, and `commentable_type` is the model name.
 
 ## Usage
 
